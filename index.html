@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aviator-Style Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>🚀 Virtual Aviator</h1>
+  <p>Your Points: <span id="points">1000</span></p>
+
+  <input type="number" id="betAmount" placeholder="Enter bet points" min="1">
+  <button id="startBtn">Start Game</button>
+  <button id="cashoutBtn" disabled>Cash Out</button>
+
+  <div class="game-area">
+    <div class="sky">
+      <img id="plane" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Paper-plane_icon.svg/1024px-Paper-plane_icon.svg.png" alt="Plane">
+    </div>
+    <p class="multiplier-text">Multiplier: <span id="multiplier">1.0x</span></p>
+  </div>
+
+  <h2>Leaderboard</h2>
+  <ul id="leaderboard">
+    <li>You: 1000</li>
+  </ul>
+
+  <p id="message"></p>
+
+  <!-- Sound Effects -->
+  <audio id="riseSound" src="https://freesound.org/data/previews/403/403008_5121236-lq.mp3"></audio>
+  <audio id="crashSound" src="https://freesound.org/data/previews/73/73502_634166-lq.mp3"></audio>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
